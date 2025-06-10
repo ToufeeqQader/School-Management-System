@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A2DA728E-A509-4548-9164-0A0E0161A66A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>schoolmanagementsystem</RootNamespace>
+    <AssemblyName>schoolmanagementsystem</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceForm_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendanceForm_Admin.Designer.cs">
+      <DependentUpon>AttendanceForm_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageClassesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageClassesForm.Designer.cs">
+      <DependentUpon>ManageClassesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageFeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageFeeForm.Designer.cs">
+      <DependentUpon>ManageFeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageResultForm_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageResultForm_Admin.Designer.cs">
+      <DependentUpon>ManageResultForm_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageStudentForm.Designer.cs">
+      <DependentUpon>ManageStudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageTeachersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageTeachersForm.Designer.cs">
+      <DependentUpon>ManageTeachersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentAttendanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentAttendanceForm.Designer.cs">
+      <DependentUpon>StudentAttendanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentDashboard.Designer.cs">
+      <DependentUpon>StudentDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentInfoForm.Designer.cs">
+      <DependentUpon>StudentInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubjectManagementForm.Designer.cs">
+      <DependentUpon>SubjectManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherClassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherClassForm.Designer.cs">
+      <DependentUpon>TeacherClassForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherDashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherDashboardForm.Designer.cs">
+      <DependentUpon>TeacherDashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherMarkAttendanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherMarkAttendanceForm.Designer.cs">
+      <DependentUpon>TeacherMarkAttendanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherMarkResultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherMarkResultForm.Designer.cs">
+      <DependentUpon>TeacherMarkResultForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagementForm.Designer.cs">
+      <DependentUpon>UserManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFeeForm.Designer.cs">
+      <DependentUpon>ViewFeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMarksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewMarksForm.Designer.cs">
+      <DependentUpon>ViewMarksForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendanceForm_Admin.resx">
+      <DependentUpon>AttendanceForm_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageClassesForm.resx">
+      <DependentUpon>ManageClassesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageFeeForm.resx">
+      <DependentUpon>ManageFeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageResultForm_Admin.resx">
+      <DependentUpon>ManageResultForm_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageStudentForm.resx">
+      <DependentUpon>ManageStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageTeachersForm.resx">
+      <DependentUpon>ManageTeachersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentAttendanceForm.resx">
+      <DependentUpon>StudentAttendanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentDashboard.resx">
+      <DependentUpon>StudentDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentInfoForm.resx">
+      <DependentUpon>StudentInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubjectManagementForm.resx">
+      <DependentUpon>SubjectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherClassForm.resx">
+      <DependentUpon>TeacherClassForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherDashboardForm.resx">
+      <DependentUpon>TeacherDashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherMarkAttendanceForm.resx">
+      <DependentUpon>TeacherMarkAttendanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherMarkResultForm.resx">
+      <DependentUpon>TeacherMarkResultForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagementForm.resx">
+      <DependentUpon>UserManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewFeeForm.resx">
+      <DependentUpon>ViewFeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewMarksForm.resx">
+      <DependentUpon>ViewMarksForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
